@@ -1,0 +1,36 @@
+Aviation Fatigue Risk Management System (FRMS) Simulator 
+Project Overview
+This project is a high-fidelity Fatigue Risk Management System (FRMS) Simulator designed to analyze pilot fatigue and operational risks in large-scale airline rosters. By simulating 10,000+ flight duty periods, the system identifies "Red Zones" where fatigue levels exceed safety thresholds based on international aviation regulations and human circadian biology.
+
+Key Features
+Large-Scale Simulation: Generates and analyzes 10,000+ synthetic flight rosters to mimic real-world airline operations.
+Regulatory Compliance: Integrated EASA FTL (Flight Time Limitations) logic to flag duties exceeding 13 hours.
+Circadian Biology Integration: Features a WOCL (Window of Circadian Low) scoring engine that penalizes duties starting between 02:00 and 06:00.
+Predictive Risk Scoring: Dynamically calculates fatigue scores for every duty period, identifying critical "Red Zones" for proactive intervention.
+
+Core Methodology & Logic
+
+The simulator evaluates risk using a multi-factor weighted algorithm:
+Fatigue\_Score = (Duty\_Length \times 5) + (WOCL\_Penalty) + (Regulatory\_Violation)
+
+Base Fatigue Score: Calculated as a function of Duty Length (5 points per hour).
+Circadian Penalty (WOCL): Duties overlapping the 02:00 - 06:00 window (Window of Circadian Low) receive a +30 risk weight due to heightened physiological vulnerability.
+Regulatory Cap: Any duty exceeding 13 hours (per EASA FTL guidelines) triggers an immediate +50 safety violation penalty.
+
+Results & Analytics:
+Total Rosters Analyzed: 10,000.
+Red Zone Alerts Detected: 743 (7.43%).
+Analysis: The most severe risks were identified in long-haul duties starting during the WOCL window, demonstrating the model's high sensitivity to physiological and regulatory risks.
+
+
+Tech Stack
+Language: Python 3.x
+Libraries: Pandas (Data Processing), NumPy (Numerical Simulation)
+Analytical Framework: Applied Business Analytics, Operations Management (OM).
+
+Author
+Goh Eng Hong (Alex)
+Bachelor of Applied Business Analytics (Honours) student at TAR UMT (Penang Branch).Expected Graduation: June 2027.Passionate about Aviation Safety, Predictive Modeling, and Operational Excellence (OpEx).
+Contact: alexgohenghong@gmail.com
+
+
