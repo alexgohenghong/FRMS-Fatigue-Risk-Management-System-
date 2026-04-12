@@ -1,36 +1,24 @@
-Aviation Fatigue Risk Management System (FRMS) Simulator 
-Project Overview
-This project is a high-fidelity Fatigue Risk Management System (FRMS) Simulator designed to analyze pilot fatigue and operational risks in large-scale airline rosters. By simulating 10,000+ flight duty periods, the system identifies "Red Zones" where fatigue levels exceed safety thresholds based on international aviation regulations and human circadian biology.
+# ✈️ Aviation Fatigue Risk Management System (FRMS) Simulator
 
-Key Features
-Large-Scale Simulation: Generates and analyzes 10,000+ synthetic flight rosters to mimic real-world airline operations.
-Regulatory Compliance: Integrated EASA FTL (Flight Time Limitations) logic to flag duties exceeding 13 hours.
-Circadian Biology Integration: Features a WOCL (Window of Circadian Low) scoring engine that penalizes duties starting between 02:00 and 06:00.
-Predictive Risk Scoring: Dynamically calculates fatigue scores for every duty period, identifying critical "Red Zones" for proactive intervention.
+## 📌 Strategic Overview
+This project is a high-fidelity Fatigue Risk Management System (FRMS) Simulator designed to analyze pilot fatigue and operational risks in large-scale airline rosters. By simulating 5,000+ flight duty periods, the system identifies critical "Red Zones" where fatigue levels exceed safety thresholds based on international aviation regulations (EASA) and human circadian biology.
 
-Core Methodology & Logic
+## 📊 Analytics & Core Methodology
+- **Large-Scale Simulation:** Generates and analyzes synthetic flight rosters to mimic real-world operations.
+- **Regulatory Compliance (EASA FTL):** Integrated Flight Time Limitations logic to flag duty violations.
+- **WOCL Risk Engine:** Features a Window of Circadian Low (WOCL) scoring engine that penalizes duties overlapping the 02:00–05:59 window.
+- **Predictive Identification:** Dynamically calculates fatigue risk scores, classifying flights into Low, Moderate, and Critical Risk tiers.
 
-The simulator evaluates risk using a multi-factor weighted algorithm:
-Fatigue\_Score = (Duty\_Length \times 5) + (WOCL\_Penalty) + (Regulatory\_Violation)
+## 📈 Executive Safety Insights
+- **Total Sectors Analyzed:** 5,000
+- **Critical Risk Flights Detected:** Identified **9.4%** of flights as high-risk, primarily driven by WOCL overlap and multi-sector penalties.
+- **Operational Recommendation:** Flagged flights require mandatory 'Heavy Crew' augmentation or controlled rest to prevent physiological fatigue and ensure SOP adherence.
 
-Base Fatigue Score: Calculated as a function of Duty Length (5 points per hour).
-Circadian Penalty (WOCL): Duties overlapping the 02:00 - 06:00 window (Window of Circadian Low) receive a +30 risk weight due to heightened physiological vulnerability.
-Regulatory Cap: Any duty exceeding 13 hours (per EASA FTL guidelines) triggers an immediate +50 safety violation penalty.
+## 🛠️ Technical Stack
+- **Language:** Python
+- **Libraries:** Pandas (Data Wrangling), NumPy, Seaborn & Matplotlib (Risk Visualization)
+- **Framework:** Applied Business Analytics & Operations Management (OM)
 
-Results & Analytics:
-Total Rosters Analyzed: 10,000.
-Red Zone Alerts Detected: 743 (7.43%).
-Analysis: The most severe risks were identified in long-haul duties starting during the WOCL window, demonstrating the model's high sensitivity to physiological and regulatory risks.
-
-
-Tech Stack
-Language: Python 3.x
-Libraries: Pandas (Data Processing), NumPy (Numerical Simulation)
-Analytical Framework: Applied Business Analytics, Operations Management (OM).
-
-Author
-Goh Eng Hong (Alex)
-Bachelor of Applied Business Analytics (Honours) student at TAR UMT (Penang Branch).Expected Graduation: June 2027.Passionate about Aviation Safety, Predictive Modeling, and Operational Excellence (OpEx).
-Contact: alexgohenghong@gmail.com
-
-
+---
+*Created by Goh Eng Hong (Alex) - Applied Business Analytics student.*
+*Targeting: Aviation Safety, Flight Operations, and Crew Resource Management roles.*
